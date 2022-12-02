@@ -1,0 +1,46 @@
+::after,
+::before,
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-100: hsl(240, 6%, 50%);
+  --primary-200: hsl(240, 5%, 91%);
+  --primary-300: hsl(240, 6%, 50%);
+  --primary-400: hsl(237, 12%, 33%);
+  --primary-500: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --gradient-1: hsl(273, 75%, 66%);
+  --gradient-2: hsl(240, 73%, 65%);
+}
+.mobile {
+  display: none;
+}
+body {
+  background-image: linear-gradient(
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  font-family: Kumbh Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  background-color: var(--primary-200);
+  border-radius: 2.5%;
+  width: 70%;
+  margin: 0 auto;
+}
+.desktop-img {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+}
