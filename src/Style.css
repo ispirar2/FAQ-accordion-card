@@ -13,12 +13,8 @@
   --primary-400: hsl(237, 12%, 33%);
   --primary-500: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
-  --gradient-1: hsl(273, 75%, 66%);
-  --gradient-2: hsl(240, 73%, 65%);
 }
-.mobile {
-  display: none;
-}
+
 body {
   background-image: linear-gradient(
     hsl(273, 75%, 66%),
@@ -33,14 +29,33 @@ body {
 }
 
 .container {
-  position: relative;
+  display: flex;
   background-color: var(--primary-200);
-  border-radius: 2.5%;
+  border-radius: 2rem;
   width: 70%;
   margin: 0 auto;
+  transform: translate(0, 30%);
 }
-.desktop-img {
-  width: 25%;
+
+.hero{
+  width: 20rem;
 }
+summary{
+  list-style: none;
+}
+
+
 @media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    background-color: var(
+      --primary-200
+    );
+    border-radius: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    transform: translate(0, 100%);
+  }
+
+  
 }
